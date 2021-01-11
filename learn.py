@@ -15,7 +15,6 @@ def cleanhtml(raw_html):
     return cleantext
 
 # define
-chromedriver = 'chromedriver'
 termSelector = '.SetPageTerm-wordText'
 defintionSelector = '.SetPageTerm-definitionText'
 loginBtnSelector = '.SiteHeader-signIn > button.UILink.UILink--inverted'
@@ -42,6 +41,7 @@ isCheckpoint = 'div.FixedActionLayout-action > div > button'
 
 isEnd = '.EndView'
 
+chromedriver = 'chromedriver'
 quizletId = input("quizletId(For https://quizlet.com/321434504/ id is 321434504):")
 username = input("username:")
 password = input("password:")
