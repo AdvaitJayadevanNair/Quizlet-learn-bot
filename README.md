@@ -14,7 +14,7 @@ Windows, Linux or Mac
 - Remember the Chrome version on the page
 - Go [here](https://chromedriver.chromium.org/downloads) and download the driver of your chrome version to the folder with the extracted files
 - Open Command Prompt or Terminal and go to the folder location(Ex. Windows: `cd C:\Users\`*Username*`\Downloads\Quizlet-learn-bot`)
-- Run `pip install -r requirements.txt` and wait for it to finish
+- Run `py -m pip install -r requirements.txt` and wait for it to finish
 - Your now done installing
 ### How to use
 - Run `py learn.py`
