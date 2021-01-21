@@ -17,7 +17,7 @@ def cleanhtml(raw_html):
 # define
 termSelector = '.SetPageTerm-wordText'
 defintionSelector = '.SetPageTerm-definitionText'
-loginBtnSelector = '.SiteHeader-signIn > button.UILink.UILink--inverted'
+loginBtnSelector = 'div.SiteNavLoginSection > button'
 usernameInputSelector = '#username'
 passwordInputSelector = '#password'
 submitBtnSelector = 'div.UIModalBody > form > button'
