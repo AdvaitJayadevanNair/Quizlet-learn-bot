@@ -110,6 +110,7 @@ while True:
         driver.find_element_by_css_selector(isCheckpoint).click()
     elif check_exists(isEnd):
         print('Finished')
+        driver.quit()
         raise SystemExit(0)
     else:
         print('Unknown')
