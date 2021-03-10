@@ -1,4 +1,4 @@
-# Quizlet-learn-bot
+# Quizlet learn bot
 An automated bot created with Python and Selenium to play Learn
 ### Requirements
 Windows, Linux or Mac
