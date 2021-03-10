@@ -57,11 +57,8 @@ for i in range(len(terms)):
   data[cleanhtml(terms[i].get_attribute('innerHTML'))] = cleanhtml(defintions[i].get_attribute('innerHTML'))
 del terms
 del defintions
-
 print(data)
-# Go to learn
-driver.get('https://quizlet.com/'+quizletId+'/learn')
-time.sleep(3)
+
 # login
 driver.find_element_by_css_selector(loginBtnSelector).click()
 driver.find_element_by_css_selector(usernameInputSelector).send_keys(username)
@@ -73,6 +70,11 @@ if len(driver.find_elements_by_css_selector(isSuccesfulSelector)) == 0:
 else:
     print('Credentials not valid!')
     raise SystemExit(1)
+
+# Go to learn
+driver.get('https://quizlet.com/'+quizletId+'/learn')
+time.sleep(3)
+
 # Start learn
 driver.find_element_by_css_selector(learnStartBtn).click()
 print('Doing learn!')
@@ -106,7 +108,7 @@ while True:
         driver.find_element_by_css_selector(isFlashcard).click()
         driver.find_element_by_css_selector(continueBtn).click()
     elif check_exists(isCheckpoint):
-        print('Checkpoint');
+        print('Checkpoint')
         driver.find_element_by_css_selector(isCheckpoint).click()
     elif check_exists(isEnd):
         print('Finished')
